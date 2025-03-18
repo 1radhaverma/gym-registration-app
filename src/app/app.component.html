@@ -1,0 +1,41 @@
+<mat-toolbar color="primary">
+  <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="isExpanded = !isExpanded">
+    <mat-icon>menu</mat-icon>
+  </button> -->
+    <h1>Gym Registration App</h1>
+    <span class="example-spacer"></span>
+    <button routerLink="/list"mat-raised-button color="accent">
+     View Enquiries
+    </button>
+  </mat-toolbar>
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav class="example-sidenav" mode="side" opened (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+      <!-- Remove the unwanted menu item -->
+      <!-- Add other sidebar content if needed -->
+    </mat-sidenav>
+    
+    <mat-sidenav-content>
+      <div class="container mt-4">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <!-- <mat-sidenav-container >
+    <mat-sidenav #sidenav class="example-sidenav" mode="side" opened  (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+      <!-- Your sidenav content goes here -->
+      <!-- Example: -->
+      <!-- <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+				<span class="full-width" *ngIf="isExpanded || isShowing" >Parent Menu</span>
+				<mat-icon mat-list-icon>home</mat-icon>
+			</mat-list-item>
+        <!-- Add more links as needed -->
+ 
+    <!-- </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="container mt-4">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>  -->
+  <ng-toast></ng-toast>
+  <ng-confirm></ng-confirm>

@@ -1,0 +1,52 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  /* Adjust sidenav width */
+  mat-sidenav {
+    width: auto;
+  }
+
+  /* Center the toolbar content */
+  mat-toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Style the toolbar title */
+  h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  /* Style the spacer */
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  /* Style the container */
+  .container {
+    padding: 20px;
+  }
+  .example-container {
+    height: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .example-sidenav {
+     user-select: none;
+  }
+  .full-width {
+    width: 100%;
+  }
+  .menu-button {
+    transition: 300ms ease-in-out;
+    transform: rotate(0deg);
+  }
